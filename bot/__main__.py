@@ -154,9 +154,9 @@ help_string_telegraph = f'''<br>
 <b>/{BotCommands.StatsCommand}</b>: Show Stats of the machine the bot is hosted on
 '''
 help = Telegraph(access_token=telegraph_token).create_page(
-        title='Hiroshi Cloud Zone Bot Commands Help',
-        author_name='Hiroshi_CloudZone',
-        author_url='https://telegram.dog/Hiroshi_CloudZone',
+        title='KOT Cloud Zone Bot Commands Help',
+        author_name='KOT_CLOUD_ZONE',
+        author_url='https://telegram.dog/KOT_MIRROR_ZONE',
         html_content=help_string_telegraph,
     )["path"]
 
@@ -210,7 +210,7 @@ def main():
         os.remove(".restartmsg")
     elif OWNER_ID:
         try:
-            text = "<b>Bot Restarted Due To Overload </b>"
+            text = "<b>Bot Restarted @KOT_BOTS/b>"
             bot.sendMessage(chat_id=OWNER_ID, text=text, parse_mode=ParseMode.HTML)
             if AUTHORIZED_CHATS:
                 for i in AUTHORIZED_CHATS:
